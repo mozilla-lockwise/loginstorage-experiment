@@ -1,0 +1,22 @@
+[
+  {
+    "namespace": "loginstorage",
+    "description": "allows replacing the default login manager storage with your own version",
+    "permissions": ["experiments.loginstorage"],
+
+    "functions": [
+      {
+        "name": "register",
+        "type": "function",
+        "description": "register a new login storage backend",
+        "async": true,
+        "parameters": [
+          {
+            "name": "storage",
+            "type": "object"
+          }
+        ]
+      }
+    ]
+  }
+]
